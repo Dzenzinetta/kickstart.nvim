@@ -46,7 +46,7 @@ git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HO
 
 ```
 # on Windows
-git clone https://github.com/nvim-lua/kickstart.nvim.git %userprofile%\AppData\Local\nvim\ 
+git clone https://github.com/Dzenzinetta/kickstart.nvim.git %userprofile%\AppData\Local\nvim\ 
 ```
 
 ### Post Installation

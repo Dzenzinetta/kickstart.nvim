@@ -3,7 +3,7 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-vim.opt.guicursor = ""
+vim.opt.guicursor = ''
 
 vim.o.splitbelow = true
 vim.o.splitright = true
@@ -15,9 +15,9 @@ vim.opt.cursorcolumn = true
 
 vim.opt.errorbells = false
 
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 
 vim.opt.smartindent = true
@@ -26,11 +26,12 @@ vim.opt.wrap = false
 
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = os.getenv("USERPROFILE") .. "/.vim/undodir"
+--vim.opt.undodir = os.getenv("USERPROFILE") .. "/.vim/undodir"
 vim.opt.undofile = true
 
 vim.opt.hlsearch = false
-vim.opt.incsearch = true vim.opt.termguicolors = true
+vim.opt.incsearch = true
+vim.opt.termguicolors = true
 vim.o.showtabline = 2
 vim.o.conceallevel = 1
 vim.o.showmode = false
@@ -38,8 +39,8 @@ vim.o.pumheight = 10
 
 vim.opt.scrolloff = 8
 vim.wo.sidescrolloff = 8
-vim.opt.signcolumn = "yes"
-vim.opt.isfname:append("@-@")
+vim.opt.signcolumn = 'yes'
+vim.opt.isfname:append '@-@'
 
 -- Give more space for displaying messages.
 vim.opt.cmdheight = 1
@@ -49,20 +50,21 @@ vim.opt.cmdheight = 1
 vim.opt.updatetime = 50
 
 -- Don't pass messages to |ins-completion-menu|.
-vim.opt.shortmess:append("c")
+vim.opt.shortmess:append 'c'
 
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = '80'
 vim.opt.ruler = true
 
-vim.o.mouse = "a"
+vim.o.mouse = 'a'
 
-vim.o.clipboard = "unnamedplus"
+vim.o.clipboard = 'unnamedplus'
 
 -- vim.o.whichwrap = 'b,s,<,>,[,],h,l'
 vim.o.expandtab = true
 vim.bo.expandtab = true
 
-vim.o.langmap = "ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz"
+vim.o.langmap =
+  'ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz'
 
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
